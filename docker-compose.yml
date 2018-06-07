@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    container_name: ua-detector
+    build: ./web
+    volumes:
+      - ./web/public:/usr/share/nginx/public
+    ports:
+      - "${PORT}:80"
