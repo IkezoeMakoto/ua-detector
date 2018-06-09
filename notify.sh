@@ -19,7 +19,7 @@ payload={
           "short": false
         }
       ],
-      "ts": 123456789
+      "ts": $(date +%s)
     }
   ]
 }
