@@ -27,7 +27,7 @@ jobs:
             pip install --upgrade docker docker-compose
       - run:
           name: service deploy
-          command: make deploy/prod SLACK_API=${API}
+          command: ssh ${HOST} make -C src/github.com/IkezoeMakoto/ua-detector deploy/prod SLACK_API=${API}
 
 workflows:
   version: 2
