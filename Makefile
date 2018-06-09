@@ -1,4 +1,4 @@
-.PHONY: up down
+.PHONY: up down deploy/*
 
 .env:
 	@cp .env.example .env
@@ -8,3 +8,7 @@ up: .env
 
 down:
 	docker-compose down
+
+deploy/prod:
+	git pull
+	docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
