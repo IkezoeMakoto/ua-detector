@@ -1,29 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-  <meta charset="utf-8"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.5/platform.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-<body>
-  <title>User Agent Detector</title>
-  <span>任意のユーザエージェントを判定することができます。</span>
-  <form>
-      <input name="ua" class='js-ua' type='text' placeholder="UserAgentを入力"></form>
-  <button class='js-ua-detect'>判定♪</button>
-  </form>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <span>判定結果</span>
-  <li>
-    <span class='js-os'>
-    </span>
-  </li>
-  <li>
-    <span class='js-browser'>
-    </span>
-  </li>
-  <li>
-    <span class='js-browser-version'>
-    </span>
-  </li>
+  <title>User Agent Detector</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" type="text/css" href="/css/cover.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.5/platform.js"></script>
+  <script src="/js/detect.js"></script>
+</head>
+
+<body class="text-center">
+<div class="container cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <!-- Header -->
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h1 class="masthead-brand">Zoe.tools</h1>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="https://blog.zoe.tools">Developer Blog</a>
+        <a class="nav-link" href="https://github.com/IkezoeMakoto/ua-detector">github.com</a>
+        <a class="nav-link" href="mailto:150283t@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">User Agent Detector</h1>
+    <p>
+      任意のユーザエージェントを判定することができます。
+    </p>
+
+    <form>
+      <div class="input-group">
+        <input name="ua" class='js-ua form-control' type='text' placeholder="UserAgentを入力">
+        <span class="input-group-btn">
+          <button type="button" class='js-ua-detect btn btn-default'>判定♪</button>
+        </span>
+      </div>
+      <span class="small">
+        ※自分の環境を調べたい場合はそのまま判定ボタンを押してください。
+      </span>
+    </form>
+
+    <div class="row"><p></p></div>
+
+    <div class="row">
+      <span class="col-md-12 ">
+        <p class="lead">▼判定結果</p>
+      </span>
+    </div>
+
+    <div class="row">
+      <p class="lead col-md-4">OS</p>
+      <p class="lead col-md-4">Browser</p>
+      <p class="lead col-md-4">Browser Version</p>
+    </div>
+
+    <div class="row">
+      <p class="col-md-4 js-os"></p>
+      <p class="col-md-4 js-browser"></p>
+      <p class="col-md-4 js-browser-version"></p>
+    </div>
+  </main>
+
+  <!-- Footer-->
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Copyright© zoe.tools. All right reserved.</p>
+    </div>
+  </footer>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body>
+</html>
