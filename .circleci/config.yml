@@ -19,12 +19,6 @@ jobs:
     machine:
       image: circleci/classic:edge
     steps:
-      - checkout
-      - run:
-          name: Install dependencies
-          command: |
-            pip install --upgrade pip
-            pip install --upgrade docker docker-compose
       - run:
           name: service deploy
           command: ssh ${HOST} make -C src/github.com/IkezoeMakoto/ua-detector deploy/prod SLACK_API=${API}
