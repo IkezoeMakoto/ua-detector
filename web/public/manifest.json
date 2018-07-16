@@ -1,0 +1,26 @@
+{
+  "name": "PWA of ua-detector",
+  "short_name": "ua-detector",
+  "icons": [
+    {
+      "src": "/img/z-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/img/z-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/img/z-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#ff0044",
+  "background_color": "#f2f2f5"
+}
