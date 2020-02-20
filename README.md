@@ -1,3 +1,3 @@
-[![CircleCI](https://circleci.com/gh/IkezoeMakoto/ua-detector.svg?style=svg)](https://circleci.com/gh/IkezoeMakoto/ua-detector)
+![](https://github.com/IkezoeMakoto/ua-detector/workflows/CI/badge.svg)
 # ua-detector
 * [ua-detector](http://ua-detector.zoe.tools)
